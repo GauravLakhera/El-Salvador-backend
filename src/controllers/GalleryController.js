@@ -8,7 +8,9 @@ const path = require("path");
 // Get all gallery items
 exports.getGallery = asyncHandler(async (req, res, next) => {
   const gallery = await Gallery.find();
-  sendResponse(res, 200, true, gallery, "Gallery fetched successfully");
+  return res
+    .status(200)
+    .json({ data: gallery, message: "data fectch success" });
 });
 
 // Add a new gallery item
