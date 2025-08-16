@@ -13,6 +13,8 @@ const allowedDomains = [
   "http://localhost:3000",
   "http://localhost:5174",
   "https://el-salvador-phi.vercel.app",
+  "https://elsalvadorconstructores.com",
+  "http://elsalvadorconstructores.com",
 ];
 
 app.use(
